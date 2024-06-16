@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    </head>
+    <body>
+<style>
+    body {
+    
+}
+button{
+    font-family: Trirong, serif;
+    font-size: 1.1em;
+    padding: 5px;
+    background-color: #D4E6F1;
+    border-radius: 11px;
+    border-color: #D4E6F1;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@keyframes fromLeft{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+.fromLeft{
+    transform:translateX(-500px);
+    animation-name: fromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromRight{
+    from{
+        transform: translateX(500px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+.fromRight{
+    transform:translateX(500px);
+    animation-name: fromRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+.item1{
+    background-color: #FADBD8;
+}
+.item2{
+    animation-delay: 1s;
+    background-color: #D6EAF8;
+}
+.item3{
+    animation-delay: 2s;
+    background-color: #FDEBD0;
+}
+
+#h1 {
+    font-family:georgia;
+    font-size:50px;
+}
+
+#h2 {
+    font-family:courier;
+    font-size:50px;
+}
+
+#h3 {
+    font-family:monaco;
+    font-size:50px;
+}
+
+a {
+    background-color:blue;
+    font-size:40px;
+    color:black;
+    text-shadow:20 px 20px;
+    font-family:garamond;
+}
+p {
+    font-size:30px
+}
+.c{
+    background-color: lightgrey;
+    border:solid 4px;
+    border-radius:100px;
+}
+
+      
+        
+</style>
+<div class="c">
+<center> <h2> Made By:-</h2>
+  <img src="https://www.dropbox.com/scl/fi/bvve3bhytcshebm1bc1al/PicsArt_08-07-08.26.08.png?rlkey=9kq90qgdch9ixes2a4q0ktfk4&raw=1" alt ="image" width=50%> </center> </div>
+  
+ <center>
+ <h2 id="h1"> Stone</h2>
+ <h2 id="h2"> Paper</h2>
+ <h2 id="h3"> Scissor</h2>
+
+ </center>
+ 
+<br>
+<br>
+<br>
+<br>
+<center>
+    <a href="game.html"> Play </a>
+</center>
+ 
+    </body>
+</html>

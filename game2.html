@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+<meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <style>
+        body {background-color: lightgrey;
+    
+}
+
+img {
+    border-radius:50%;
+}
+
+h1{
+    color:red;
+}
+
+h2 {
+    color:blue;
+}
+
+b {
+    font-size:20px;
+    font-family:serif;
+    border:5px 5px 5px 5px;
+}
+a {
+    background-color:blue;
+    font-size:40px;
+    color:black;
+}
+    </style>
+    <div>
+    <center>
+    <b> Choose Stone, Paper or Scissor then press select.</b> <br>
+    <br>
+    <br>
+    
+ <img src="" id="p1" width =50%> </center> </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br> <div> <center>
+ <button onclick = 'Stone()'><strong> Stone </strong></button>    
+ <button onclick = 'Paper()'><strong> Paper </strong></button> 
+ <button onclick = 'Scissor()'><strong> Scissor </strong></button> </center></div> 
+ <div>
+ <h2> </h2> </div>
+ <br>
+ <br> <div> <center>
+  <button onclick = 'Select()'><strong> Select </strong></button> </center> </div>
+  
+  
+ <div>
+ <center>
+ <h2 id="h2"> </h2>
+ <img src="" id="p2" width =50% > </center> </div>
+ 
+ <div> <center>
+ <h1 id="h1"> </h1> 
+ <a href="" id="a1"> </a>
+ </center> </div>
+ <script>
+     function Stone() {
+    const el = document.getElementById("p1");
+    el.src = "https://www.dropbox.com/scl/fi/cx1kqup9jjrzh36sxy10g/PicsArt_06-07-10.42.03.png?rlkey=35gs8pk4lsho3lc1topesbetz&raw=1";
+}
+
+function Paper() {
+    const el = document.getElementById("p1");
+    el.src = "https://www.dropbox.com/scl/fi/923o4dbpfz2nxcw2hvr9d/IMG_20240610_162303.png?rlkey=7imd7745god728tqtdxwq74vu&raw=1";
+}
+
+function Scissor() {
+    const el = document.getElementById("p1");
+    el.src = "https://www.dropbox.com/scl/fi/ayaifq0h7wdmcqfis1xi8/IMG_20240610_162347.png?rlkey=l7g5quxe0eqrbcgt9wn9lesf8&raw=1";
+}
+
+function Select () {
+    const el = document.getElementById("p1");
+    const link = document.getElementById("a1");
+    link.href = "game.html";
+    document.getElementById("a1").innerHTML = "Restart";
+    
+    
+    const ell = document.getElementById("p2")
+    document.getElementById("h2").innerHTML = "Computer Choosed";
+    const a = ["Stone", "Paper", "Scissor"];
+const b = a[Math.floor(Math.random() * a.length)];
+if(b === "Stone") {
+    ell.src = "https://www.dropbox.com/scl/fi/cx1kqup9jjrzh36sxy10g/PicsArt_06-07-10.42.03.png?rlkey=35gs8pk4lsho3lc1topesbetz&raw=1";
+} else if (b === "Paper") {
+    ell.src = "https://www.dropbox.com/scl/fi/923o4dbpfz2nxcw2hvr9d/IMG_20240610_162303.png?rlkey=7imd7745god728tqtdxwq74vu&raw=1";
+} else {
+    ell.src = "https://www.dropbox.com/scl/fi/ayaifq0h7wdmcqfis1xi8/IMG_20240610_162347.png?rlkey=l7g5quxe0eqrbcgt9wn9lesf8&raw=1";
+}
+
+
+
+if (el.src === ("https://www.dropbox.com/scl/fi/cx1kqup9jjrzh36sxy10g/PicsArt_06-07-10.42.03.png?rlkey=35gs8pk4lsho3lc1topesbetz&raw=1") && ell.src ===("https://www.dropbox.com/scl/fi/ayaifq0h7wdmcqfis1xi8/IMG_20240610_162347.png?rlkey=l7g5quxe0eqrbcgt9wn9lesf8&raw=1")) {
+    document.getElementById("h1").innerHTML = ("You Win");
+} else if (el.src === ("https://www.dropbox.com/scl/fi/923o4dbpfz2nxcw2hvr9d/IMG_20240610_162303.png?rlkey=7imd7745god728tqtdxwq74vu&raw=1") && ell.src ===("https://www.dropbox.com/scl/fi/cx1kqup9jjrzh36sxy10g/PicsArt_06-07-10.42.03.png?rlkey=35gs8pk4lsho3lc1topesbetz&raw=1")) {
+    document.getElementById("h1").innerHTML = ("You Win");
+} else if (el.src === ("https://www.dropbox.com/scl/fi/ayaifq0h7wdmcqfis1xi8/IMG_20240610_162347.png?rlkey=l7g5quxe0eqrbcgt9wn9lesf8&raw=1") && ell.src === ("https://www.dropbox.com/scl/fi/923o4dbpfz2nxcw2hvr9d/IMG_20240610_162303.png?rlkey=7imd7745god728tqtdxwq74vu&raw=1")) {
+    document.getElementById("h1").innerHTML = ("You Win");
+} else if (el.src === ("https://www.dropbox.com/scl/fi/cx1kqup9jjrzh36sxy10g/PicsArt_06-07-10.42.03.png?rlkey=35gs8pk4lsho3lc1topesbetz&raw=1") && ell. src === ("https://www.dropbox.com/scl/fi/923o4dbpfz2nxcw2hvr9d/IMG_20240610_162303.png?rlkey=7imd7745god728tqtdxwq74vu&raw=1")) {
+    document.getElementById("h1").innerHTML = ("You Lose");
+} else if (el.src === ("https://www.dropbox.com/scl/fi/923o4dbpfz2nxcw2hvr9d/IMG_20240610_162303.png?rlkey=7imd7745god728tqtdxwq74vu&raw=1") && ell.src === ("https://www.dropbox.com/scl/fi/ayaifq0h7wdmcqfis1xi8/IMG_20240610_162347.png?rlkey=l7g5quxe0eqrbcgt9wn9lesf8&raw=1")) {
+    document.getElementById("h1").innerHTML = ("You Lose")
+} else if (el.src === ("https://www.dropbox.com/scl/fi/ayaifq0h7wdmcqfis1xi8/IMG_20240610_162347.png?rlkey=l7g5quxe0eqrbcgt9wn9lesf8&raw=1") && ell.src === ("https://www.dropbox.com/scl/fi/cx1kqup9jjrzh36sxy10g/PicsArt_06-07-10.42.03.png?rlkey=35gs8pk4lsho3lc1topesbetz&raw=1")) {
+    document.getElementById("h1").innerHTML = ("You Lose");
+} else {
+    document.getElementById("h1").innerHTML = ("Draw")
+}
+}
+ </script>
+    </body>
+</html>
